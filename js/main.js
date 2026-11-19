@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", () => {
   const root = document.documentElement;
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  history.replaceState(null, "", "#home");
+  window.scrollTo(0, 0);
   const themeToggle = document.getElementById("themeToggle");
   const menuToggle = document.getElementById("menuToggle");
   const navLinks = document.getElementById("navLinks");
