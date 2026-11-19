@@ -1,0 +1,532 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="The personal portfolio of John Paul P. Valenzuela, an aspiring full-stack developer and BSIT student."
+    />
+    <title>John Paul P. Valenzuela — Full-Stack Developer</title>
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' rx='18' fill='%23d56e4b'/%3E%3Ctext x='50' y='66' font-size='40' text-anchor='middle' fill='white' font-family='Arial'%3EJP%3C/text%3E%3C/svg%3E"
+    />
+    <script>
+      (() => {
+        const savedTheme = localStorage.getItem("portfolio-theme");
+        const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
+          .matches
+          ? "dark"
+          : "light";
+        document.documentElement.dataset.theme = savedTheme || systemTheme;
+      })();
+    </script>
+    <link rel="stylesheet" href="css/variables.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="navbar" id="top">
+      <div class="container nav-container">
+        <a href="#home" class="logo" aria-label="JP home">JP<span>.</span></a>
+        <button
+          class="menu-toggle"
+          id="menuToggle"
+          type="button"
+          aria-expanded="false"
+          aria-controls="navLinks"
+        >
+          <span class="menu-label">Menu</span
+          ><span class="hamburger" aria-hidden="true"><i></i><i></i></span>
+        </button>
+        <nav class="nav-links" id="navLinks" aria-label="Primary navigation">
+          <a href="#home" class="active">Home</a><a href="#about">About</a
+          ><a href="#skills">Skills</a><a href="#projects">Projects</a
+          ><a href="#experience">Experience</a><a href="#education">Education</a
+          ><a href="#certificates">Certificates</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <button
+          class="theme-toggle"
+          id="themeToggle"
+          type="button"
+          aria-label="Switch to dark mode"
+          aria-pressed="false"
+        >
+          <span class="theme-icon theme-icon-sun" aria-hidden="true">☼</span
+          ><span class="theme-icon theme-icon-moon" aria-hidden="true">◐</span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main-content">
+      <section id="home" class="hero-section section-pad">
+        <div class="container hero-container">
+          <div class="hero-copy reveal">
+            <p class="eyebrow">
+              <span class="eyebrow-dot"></span> Available for learning &
+              collaboration
+            </p>
+            <h1>Building useful things <em>with intention.</em></h1>
+            <p class="hero-lede">
+              I’m John Paul, an IT student and aspiring full-stack developer
+              focused on clear interfaces, dependable systems, and the details
+              that make software feel human.
+            </p>
+            <div class="hero-cta">
+              <a href="#projects" class="btn btn-primary"
+                >View my work <span aria-hidden="true">↗</span></a
+              ><a href="#contact" class="btn btn-text"
+                >Let’s connect <span aria-hidden="true">→</span></a
+              >
+            </div>
+            <div class="hero-meta">
+              <span><b class="status-dot"></b> Legazpi City, Philippines</span
+              ><span class="mono">BSIT / 2027</span>
+            </div>
+          </div>
+          <div class="hero-visual reveal reveal-delay">
+            <div class="portrait-frame">
+              <div class="portrait-topline">
+                <span>PROFILE / 01</span><span>JPV</span>
+              </div>
+              <img
+                src="assets/images/profile.jpg"
+                alt="John Paul P. Valenzuela"
+                class="profile-img"
+              />
+              <div class="portrait-caption">
+                <span>John Paul P. Valenzuela</span
+                ><span>Full-stack developer</span>
+              </div>
+            </div>
+            <div class="hero-note note-one">01 — Curious by default</div>
+            <div class="hero-note note-two">02 — Learning in public</div>
+          </div>
+        </div>
+        <div class="scroll-cue" aria-hidden="true">
+          <span></span> Scroll to explore
+        </div>
+      </section>
+
+      <section id="about" class="section-pad section-line">
+        <div class="container about-grid">
+          <div class="section-intro reveal">
+            <p class="eyebrow">01 / About me</p>
+            <h2>A student who likes to understand the whole picture.</h2>
+          </div>
+          <div class="about-copy reveal reveal-delay">
+            <p class="lead-copy">
+              I’m a passionate BSIT student at STI College Legazpi with hands-on
+              experience designing intuitive user interfaces and building robust
+              core system features.
+            </p>
+            <p>
+              My development work spans full-stack implementation, including
+              secure authentication, OCR text extraction, face recognition
+              identity verification, and payment processing workflows. I enjoy
+              the point where a technical requirement becomes a thoughtful,
+              useful experience.
+            </p>
+            <p>
+              Driven by continuous learning, hard work, and problem-solving, I
+              focus on turning ideas into clean, efficient, and user-friendly
+              digital solutions.
+            </p>
+            <div class="about-signature">
+              <span class="signature-mark">JP</span
+              ><span
+                >Currently learning, building,<br />and looking ahead.</span
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section-pad section-muted section-line">
+        <div class="container">
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="eyebrow">02 / Toolkit</p>
+              <h2>The tools I use to make ideas real.</h2>
+            </div>
+            <p class="heading-aside">
+              A practical toolkit shaped by academic projects, experiments, and
+              a habit of learning by doing.
+            </p>
+          </div>
+          <div class="skills-marquee reveal" aria-label="Skills and tools">
+            <div class="skills-marquee-group">
+              <div class="skills-marquee-label">
+                <span class="skill-number">01</span>
+                <span>Programming tools</span>
+              </div>
+              <div class="skills-marquee-row">
+                <div class="skills-marquee-track skills-marquee-track-left">
+                  <ul class="skill-tags skills-marquee-list">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Tailwind CSS</li>
+                    <li>Laravel Blade</li>
+                    <li>MySQL</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>Visual Studio Code</li>
+                    <li>Figma (UI/UX)</li>
+                  </ul>
+                  <ul class="skill-tags skills-marquee-list" aria-hidden="true">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Tailwind CSS</li>
+                    <li>Laravel Blade</li>
+                    <li>MySQL</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>Visual Studio Code</li>
+                    <li>Figma (UI/UX)</li>
+                  </ul>
+                  <ul class="skill-tags skills-marquee-list" aria-hidden="true">
+                    <li>HTML5</li>
+                    <li>CSS3</li>
+                    <li>JavaScript</li>
+                    <li>PHP</li>
+                    <li>Laravel</li>
+                    <li>Tailwind CSS</li>
+                    <li>Laravel Blade</li>
+                    <li>MySQL</li>
+                    <li>Git &amp; GitHub</li>
+                    <li>Visual Studio Code</li>
+                    <li>Figma (UI/UX)</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="skills-marquee-group">
+              <div class="skills-marquee-label">
+                <span class="skill-number">02</span>
+                <span>Features &amp; capabilities</span>
+              </div>
+              <div class="skills-marquee-row">
+                <div class="skills-marquee-track skills-marquee-track-right">
+                  <ul class="skill-tags skills-marquee-list">
+                    <li>Responsive web design</li>
+                    <li>CRUD operations</li>
+                    <li>User authentication</li>
+                    <li>Database design</li>
+                    <li>OCR document processing</li>
+                    <li>Face recognition</li>
+                    <li>Payment integration</li>
+                  </ul>
+                  <ul class="skill-tags skills-marquee-list" aria-hidden="true">
+                    <li>Responsive web design</li>
+                    <li>CRUD operations</li>
+                    <li>User authentication</li>
+                    <li>Database design</li>
+                    <li>OCR document processing</li>
+                    <li>Face recognition</li>
+                    <li>Payment integration</li>
+                  </ul>
+                  <ul class="skill-tags skills-marquee-list" aria-hidden="true">
+                    <li>Responsive web design</li>
+                    <li>CRUD operations</li>
+                    <li>User authentication</li>
+                    <li>Database design</li>
+                    <li>OCR document processing</li>
+                    <li>Face recognition</li>
+                    <li>Payment integration</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section-pad section-line">
+        <div class="container">
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="eyebrow">03 / Selected work</p>
+              <h2>One project, thoughtfully built.</h2>
+            </div>
+            <p class="heading-aside">
+              A capstone system where interface design, backend logic, and
+              identity workflows meet.
+            </p>
+          </div>
+          <article class="project-feature reveal">
+            <div
+              class="project-preview project-screenshot-showcase"
+              aria-label="Screenshots of the Integrated Business Lending System"
+            >
+              <div class="project-screenshot-grid">
+                <figure
+                  class="project-screenshot-card project-screenshot-trigger"
+                  tabindex="0"
+                  role="button"
+                  data-certificate="assets/images/adminpage.png"
+                  data-certificate-alt="Admin Dashboard preview"
+                  aria-label="Open Admin Dashboard preview"
+                >
+                  <div class="project-screenshot-image">
+                    <img
+                      src="assets/images/adminpage.png"
+                      alt="Admin Dashboard preview"
+                    />
+                  </div>
+                  <figcaption>Admin Dashboard</figcaption>
+                </figure>
+                <figure
+                  class="project-screenshot-card project-screenshot-trigger"
+                  tabindex="0"
+                  role="button"
+                  data-certificate="assets/images/clientpage.png"
+                  data-certificate-alt="Client Dashboard preview"
+                  aria-label="Open Client Dashboard preview"
+                >
+                  <div class="project-screenshot-image">
+                    <img
+                      src="assets/images/clientpage.png"
+                      alt="Client Dashboard preview"
+                    />
+                  </div>
+                  <figcaption>Client Dashboard</figcaption>
+                </figure>
+              </div>
+            </div>
+            <div class="project-details">
+              <p class="project-kicker">
+                Full-stack developer · Capstone project · 2026
+              </p>
+              <h3>Integrated Business Lending System</h3>
+              <p>
+                A comprehensive lending management web application featuring
+                dynamic workflows, secure authentication, document OCR text
+                extraction, facial verification, and automated payment tracking.
+              </p>
+              <div class="project-tags">
+                <span>PHP</span><span>Laravel Blade</span><span>MySQL</span
+                ><span>Tailwind CSS</span><span>Figma</span>
+              </div>
+              <div class="project-skills">
+                <h4>What I worked on</h4>
+                <ul>
+                  <li>UI/UX wireframing and responsive prototyping</li>
+                  <li>Secure backend logic and session authentication</li>
+                  <li>OCR and face recognition feature integration</li>
+                  <li>Database architecture and Git/GitHub version control</li>
+                </ul>
+              </div>
+              <span class="project-link project-link-muted"
+                >Academic project showcase
+                <span aria-hidden="true">↗</span></span
+              >
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="experience" class="section-pad section-muted section-line">
+        <div class="container split-section experience-layout">
+          <div class="section-intro reveal">
+            <p class="eyebrow">04 / Experience</p>
+            <h2>Learning through real requirements.</h2>
+          </div>
+          <div class="timeline experience-timeline reveal reveal-delay">
+            <article class="timeline-item experience-entry">
+              <div class="timeline-marker">01</div>
+              <div>
+                <p class="timeline-date">2026 · STI College Legazpi</p>
+                <h3>BSIT Internship Preparation & Academic Projects</h3>
+                <p>
+                  Developed and deployed full-stack web applications while
+                  collaborating on academic software engineering requirements,
+                  system analysis, and responsive user interface
+                  implementations.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="education" class="section-pad section-line">
+        <div class="container split-section">
+          <div class="section-intro reveal">
+            <p class="eyebrow">05 / Education</p>
+            <h2>The foundation behind the work.</h2>
+          </div>
+          <div class="education-list reveal reveal-delay">
+            <article class="education-item">
+              <span class="education-year">Expected 2027</span>
+              <div>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p>STI College Legazpi · Expected graduation: July 2027</p>
+                <small
+                  >Full-stack web development, database management, and system
+                  architecture.</small
+                >
+              </div>
+            </article>
+            <article class="education-item">
+              <span class="education-year">2022</span>
+              <div>
+                <h3>Java Fundamentals Course Completion</h3>
+                <p>Oracle Academy · June 2022</p>
+                <small
+                  >Fundamental programming principles and object-oriented
+                  concepts.</small
+                >
+              </div>
+            </article>
+            <article class="education-item">
+              <span class="education-year">Workshop</span>
+              <div>
+                <h3>AI PromptLab: Prompt Empowering Workshop</h3>
+                <small
+                  >Practical application of artificial intelligence tools and
+                  modern workflows.</small
+                >
+              </div>
+            </article>
+            <article class="education-item">
+              <span class="education-year">High school</span>
+              <div>
+                <h3>High School Diploma</h3>
+                <p>
+                  Salvacion National High School · Salvacion, Pilar, Sorsogon
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="certificates" class="section-pad section-muted section-line">
+        <div class="container">
+          <div class="section-heading-row reveal">
+            <div>
+              <p class="eyebrow">Certificates</p>
+              <h2>My Certificates</h2>
+            </div>
+            <p class="heading-aside">
+              A collection of learning milestones and credentials earned along
+              the way.
+            </p>
+          </div>
+          <div class="certificates-grid">
+            <button
+              class="certificate-card reveal"
+              type="button"
+              data-certificate="assets/images/certificate1.jpg"
+              data-certificate-alt="Certificate 1"
+              aria-label="Open Certificate 1"
+            >
+              <span class="certificate-image-wrap">
+                <img src="assets/images/certificate1.jpg" alt="Certificate 1" />
+              </span>
+              <span class="certificate-card-footer">
+                <span>AI Prompting</span><span aria-hidden="true">↗</span>
+              </span>
+            </button>
+            <button
+              class="certificate-card reveal reveal-delay"
+              type="button"
+              data-certificate="assets/images/certificate2.png"
+              data-certificate-alt="Certificate 2"
+              aria-label="Open Certificate 2"
+            >
+              <span class="certificate-image-wrap">
+                <img src="assets/images/certificate2.png" alt="Certificate 2" />
+              </span>
+              <span class="certificate-card-footer">
+                <span>Java Fundamentals</span><span aria-hidden="true">↗</span>
+              </span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact-section section-pad section-line">
+        <div class="container contact-grid">
+          <div class="reveal">
+            <p class="eyebrow">06 / Contact</p>
+            <h2>Let’s make something useful.</h2>
+            <p class="contact-lede">
+              Whether you have an opportunity, a project idea, or just want to
+              say hello, I’d be glad to hear from you.
+            </p>
+            <a
+              class="contact-email"
+              href="mailto:johnpaul.p.valenzuela@gmail.com"
+              >johnpaul.p.valenzuela@gmail.com
+              <span aria-hidden="true">↗</span></a
+            >
+          </div>
+          <div class="contact-aside reveal reveal-delay">
+            <div class="contact-item">
+              <span>Based in</span
+              ><strong>Legazpi City, Bicol, Philippines</strong>
+            </div>
+            <div class="contact-item">
+              <span>Call</span><a href="tel:+639484452154">+63 948 445 2154</a>
+            </div>
+            <div class="contact-item">
+              <span>LinkedIn</span
+              ><a
+                href="https://www.linkedin.com/in/john-paul-valenzuela/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin.com/in/john-paul-valenzuela</a
+              >
+            </div>
+            <p class="contact-note">
+              Email is the best way to reach me right now.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p>© 2026 John Paul P. Valenzuela</p>
+        <div>
+          <span class="footer-note">Aspiring Web Developer</span
+          ><a href="#home" class="back-top" aria-label="Back to top">↑</a>
+        </div>
+      </div>
+    </footer>
+    <div
+      class="certificate-lightbox"
+      id="certificateLightbox"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Certificate preview"
+      hidden
+    >
+      <button
+        class="certificate-lightbox-close"
+        id="certificateLightboxClose"
+        type="button"
+        aria-label="Close certificate preview"
+      >
+        ×
+      </button>
+      <img id="certificateLightboxImage" src="" alt="" />
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
